@@ -593,6 +593,24 @@ const PROJECTS = [
     fullImage: 'assets/Natural Health.jpg',
   },
 
+  // ── ПРОЕКТ 15 ── NH Brandbook ──────────────────────────────
+  {
+    id: 15,
+    title: { ru: 'NH Brandbook', en: 'NH Brandbook' },
+    cardImg: 'assets/NH Brandbook banner.jpg',
+    images: [
+      'assets/NH_1.jpg',
+      'assets/NH_2.jpg',
+      'assets/NH_3.jpg',
+      'assets/NH_4.jpg',
+      'assets/NH_5.jpg',
+      'assets/NH_6.jpg',
+      'assets/NH_7.jpg',
+      'assets/NH_8.jpg',
+    ],
+    fullImage: 'assets/NH_1.jpg',
+  },
+
   // ── ПРОЕКТ 9 ── Т-Банк: Беспилотное Т-Такси (тестовое задание) ──
   {
     id: 9,
