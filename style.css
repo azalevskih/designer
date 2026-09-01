@@ -136,6 +136,36 @@ body {
   color: var(--black);
 }
 
+/* Первый проект (id 6) — пока он открыт, навигация тёмная
+   (фон #191919, текст белый), независимо от скролла/light-banner/
+   home-page. Класс .first-project ставится/снимается в script.js
+   в openProject() / closeProject(). При выходе из проекта всё
+   возвращается к обычному поведению. */
+#main-nav.first-project {
+  background: #191919;
+}
+
+#main-nav.first-project .nav-logo,
+#main-nav.first-project .nav-links a,
+#main-nav.first-project .nav-back-btn {
+  color: #ffffff;
+}
+
+#main-nav.first-project .lang-switch {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+#main-nav.first-project .lang-switch:hover {
+  border-color: #ffffff;
+}
+
+#main-nav.first-project .lang-switch.active {
+  background: #ffffff;
+  color: #191919;
+  border-color: #ffffff;
+}
+
 .nav-logo {
   font-size: 15px;
   font-weight: 500;
