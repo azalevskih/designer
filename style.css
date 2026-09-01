@@ -760,6 +760,17 @@ footer .nav-grid > a:last-child {
   justify-self: end;
 }
 
+/* Первый проект (id 6) открыт — футер тоже тёмный, в тон верхней
+   навигации. Класс .first-project ставится/снимается в script.js
+   в openProject() / closeProject() одновременно на #main-nav и footer. */
+footer.first-project {
+  background: #191919;
+}
+
+footer.first-project a {
+  color: #ffffff;
+}
+
 
 /* ============================================================
    СТРАНИЦА ПРОЕКТА (открывается поверх)
