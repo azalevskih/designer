@@ -1359,9 +1359,10 @@ function openProject(id) {
   if (p.fullImage) {
     banner.style.display = "none";
     projBody.className = "proj-body proj-body--fullimage";
+    const fullImages = (p.images && p.images.length) ? p.images : [p.fullImage];
     projBody.innerHTML = `
       <div class="proj-fullimage-wrap">
-        <img src="${p.fullImage}" alt="">
+        ${fullImages.map(src => `<img src="${src}" alt="">`).join("")}
       </div>
     `;
 
