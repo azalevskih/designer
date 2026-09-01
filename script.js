@@ -575,6 +575,15 @@ const PROJECTS = [
     fullImage: 'assets/MICE.jpg',
   },
 
+  // ── ПРОЕКТ 13 ── Natural Health ───────────────────────────
+  {
+    id: 13,
+    title: { ru: 'Natural Health', en: 'Natural Health' },
+    cardImg: 'assets/Natural Health banner.jpg',
+    images: ['assets/Natural Health.jpg'],
+    fullImage: 'assets/Natural Health.jpg',
+  },
+
   // ── ПРОЕКТ 9 ── Т-Банк: Беспилотное Т-Такси (тестовое задание) ──
   {
     id: 9,
