@@ -458,6 +458,7 @@ const PROJECTS = [
     cardImg: 'assets/Panorama banner.jpg',
     lightBanner: false,
     images: ['assets/Panorama.jpg'],
+    fullImage: 'assets/Panorama.jpg',
 
     context: 'Beyosa — интернет-магазин товаров для сна: матрасов, кроватей, диванов и аксессуаров.\n\nПокупка мебели — дорогостоящее решение, поэтому процесс оформления заказа должен вызывать доверие, быть максимально понятным и не отвлекать пользователя от завершения покупки.\n\nПо данным аналитики воронки оформления заказа был обнаружен высокий процент выхода пользователей после перехода из корзины к оформлению. Основные потери происходили на этапах выбора доставки и заполнения контактных данных. Дополнительно UX-аудит выявил перегруженные формы и отсутствие понятного сценария выбора способа получения.',
 
@@ -1367,11 +1368,39 @@ function openProject(id) {
     return;
   }
 
+  const banner = document.getElementById("proj-banner");
+  const projBody = document.getElementById("proj-body");
+
+  // ── Проекты с полем fullImage: без текста, баннера и заголовка —
+  //    только одна картинка во всю ширину и длину страницы ──
+  if (p.fullImage) {
+    banner.style.display = "none";
+    projBody.className = "proj-body proj-body--fullimage";
+    projBody.innerHTML = `
+      <div class="proj-fullimage-wrap">
+        <img src="${p.fullImage}" alt="">
+      </div>
+    `;
+
+    document.getElementById("project-overlay").classList.add("open");
+    document.body.style.overflow = "hidden";
+    currentOpenProjectId = id;
+
+    const navEl = document.getElementById("main-nav");
+    navEl.classList.add("project-open");
+    navEl.classList.remove("scrolled");
+    navEl.classList.remove("home-page");
+    navEl.classList.toggle("light-banner", !!p.lightBanner);
+    return;
+  }
+
+  banner.style.display = "";
+  projBody.className = "proj-body";
+
   const cardTitle = (p.title && p.title[currentLang]) || (p.title && p.title.ru) || 'Project';
   const titleEl = document.getElementById("proj-title");
   if (titleEl) titleEl.textContent = cardTitle;
 
-  const banner = document.getElementById("proj-banner");
   banner.style.background = "#ffffff";
 
   const bg = document.getElementById("proj-banner-bg");

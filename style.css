@@ -795,6 +795,23 @@ footer .nav-grid > a:last-child {
   padding: 64px 48px 120px;
 }
 
+/* Проекты без текста — одна картинка во всю ширину и длину страницы */
+.proj-body--fullimage {
+  max-width: none;
+  margin: 0;
+  padding: var(--nav-h) 0 0;
+}
+
+.proj-fullimage-wrap {
+  width: 100%;
+}
+
+.proj-fullimage-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .proj-section {
   display: grid;
   grid-template-columns: 200px 1fr;
@@ -1239,6 +1256,7 @@ footer .nav-grid > a:last-child {
   .projects-track-wrapper { padding: 100px 24px 120px; }
   #contact              { padding: 60px 0; }
   .proj-body            { padding: 40px 24px 80px; }
+  .proj-body--fullimage { padding: calc(var(--nav-h) + env(safe-area-inset-top)) 0 0; }
   .proj-banner          { padding: 48px 24px; margin-top: calc(var(--nav-h) + env(safe-area-inset-top)); }
   .proj-section         { grid-template-columns: 1fr; row-gap: 16px; }
   .proj-section-head    { grid-column: 1; position: static; flex-direction: row; align-items: center; justify-content: space-between; width: 100%; }
