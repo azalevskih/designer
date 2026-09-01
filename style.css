@@ -55,14 +55,6 @@ body {
   padding: 0 48px;
 }
 
-/* Нав и футер — растягиваем на всю ширину экрана с отступом 10px от краёв,
-   как в референсе (не задевает .container в остальных секциях). */
-#main-nav .container,
-footer .container {
-  max-width: none;
-  padding: 0 10px;
-}
-
 .section-title {
   font-size: 13px;
   font-weight: 500;
@@ -145,7 +137,7 @@ footer .container {
 }
 
 .nav-logo {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 500;
   color: var(--black);
   text-decoration: none;
@@ -220,7 +212,7 @@ footer .container {
 }
 
 .nav-links a {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 500;
   color: var(--black);
   text-decoration: none;
@@ -247,7 +239,7 @@ body[data-page="about"] .nav-logo {
 
 .lang-switch {
   font-family: inherit;
-  font-size: 17px;
+  font-size: 13px;
   font-weight: 500;
   letter-spacing: 0.06em;
   color: var(--black);
@@ -720,8 +712,7 @@ footer {
   height: var(--nav-h);
   z-index: 9999;
   background: var(--white);
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 14px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--black);
