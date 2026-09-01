@@ -566,6 +566,15 @@ const PROJECTS = [
     fullImage: 'assets/Chempionat.jpg',
   },
 
+  // ── ПРОЕКТ 12 ── MICE ─────────────────────────────────────
+  {
+    id: 12,
+    title: { ru: 'MICE', en: 'MICE' },
+    cardImg: 'assets/MICE banner.jpg',
+    images: ['assets/MICE.jpg'],
+    fullImage: 'assets/MICE.jpg',
+  },
+
   // ── ПРОЕКТ 9 ── Т-Банк: Беспилотное Т-Такси (тестовое задание) ──
   {
     id: 9,
