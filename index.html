@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Азалия Замалетдинова — Product Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+      (function(m,e,t,r,i,k,a){
+          m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+          m[i].l=1*new Date();
+          for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+          k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+      })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=110418530', 'ym');
+      ym(110418530, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/110418530" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+</head>
+<body>
+
+  <!-- ============================================================
+       НАВИГАЦИЯ (верх)
+       Слева — имя (ведёт на "Обо мне"), по центру — "Проекты",
+       справа — переключатель RU / EN
+  ============================================================ -->
+  <nav id="main-nav" class="home-page">
+    <div class="container nav-grid">
+      <div class="nav-left">
+        <a href="#" class="nav-logo" onclick="navigateTo('about');return false;">
+          <span class="nav-logo-full"><span class="lang-ru">Азалия Замалетдинова</span><span class="lang-en">Azaliya Zamaletdinova</span></span>
+          <span class="nav-logo-short"><span class="lang-ru">А.З.</span><span class="lang-en">A.Z.</span></span>
+        </a>
+
+        <button type="button" class="nav-back-btn" onclick="handleNavBack();return false;">
+          <span class="nav-back-arrow" aria-hidden="true">←</span>
+          <span class="lang-ru">Назад</span><span class="lang-en">Back</span>
+        </button>
+      </div>
+
+      <ul class="nav-links nav-links--site">
+        <li><a href="#" data-page="projects" onclick="navigateTo('projects');return false;">
+          <span class="lang-ru">Проекты</span><span class="lang-en">Projects</span>
+        </a></li>
+      </ul>
+
+      <div class="lang-switch-group">
+        <button type="button" id="lang-ru-btn" class="lang-switch active" onclick="switchLanguage('ru')">RU</button>
+        <button type="button" id="lang-en-btn" class="lang-switch" onclick="switchLanguage('en')">EN</button>
+      </div>
+    </div>
+  </nav>
+
+
+  <main>
+
+    <!-- ============================================================
+         СТРАНИЦА: ОБО МНЕ (главная)
+    ============================================================ -->
+    <section id="about-page" class="page active">
+      <section id="banner">
+        <div class="banner-bg">
+          <img src="assets/avatar_image_1.png" alt="Азалия Замалетдинова" class="banner-avatar banner-avatar--base">
+          <img src="assets/avatar_image_2.png" alt="Азалия Замалетдинова" class="banner-avatar banner-avatar--alt">
+          <div class="avatar-hover-zone" aria-hidden="true"></div>
+        </div>
+         <div class="banner-content">
+          <div class="banner-name">
+
+  <div class="lang-ru">Азалия</div>
+  <div class="lang-en">Azaliya</div>
+
+  <div class="lang-ru">Замалетдинова</div>
+  <div class="lang-en">Zamaletdinova</div>
+
+  <div class="role-word">Product Designer</div>
+</div>
+
+    
+          <div class="about-label"><span class="lang-ru">Обо мне</span><span class="lang-en">About me</span></div>
+          <div class="info-block info-block--about">
+            <p class="lang-ru">Привет! Меня зовут Азалия, я product designer B2B, B2C, SaaS, Ai, проектирую мобильные и веб-интерфейсы с фокусом на UX, визуальную систему и продуктовую логику.</p>
+            <p class="lang-en">Hi! My name is Azaliya, I'm a product designer. I design mobile and web interfaces with a focus on UX, visual systems, and product logic.</p>
+            <p class="lang-en">I work with user scenarios, problem research, and building interfaces from idea to ready-to-develop mockups.</p>
+          </div>
+
+          <div class="banner-actions">
+            <a class="info-btn info-btn--secondary" href="#" onclick="navigateTo('projects');return false;">
+              <span class="lang-ru">Посмотреть кейсы</span><span class="lang-en">View case studies</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Дубликат блока "Обо мне" для мобильных — показывается под 3D-сценой -->
+      <section id="mobile-about">
+        <div class="mobile-avatar-wrap" aria-hidden="true">
+          <img src="assets/avatar_image_1_Mobile.jpg" alt="" class="mobile-avatar mobile-avatar--base">
+          <img src="assets/avatar_image_2_Mobile.jpg" alt="" class="mobile-avatar mobile-avatar--alt">
+        </div>
+
+        <div class="banner-name banner-name--mobile">
+          <div class="lang-ru">Азалия</div>
+          <div class="lang-en">Azaliya</div>
+
+          <div class="lang-ru">Замалетдинова</div>
+          <div class="lang-en">Zamaletdinova</div>
+
+          <div class="role-line">Product Designer</div>
+        </div>
+
+        <div class="about-label" style="margin-top:24px;"><span class="lang-ru">Обо мне</span><span class="lang-en">About me</span></div>
+        <div class="info-block info-block--about">
+          <p class="lang-ru">Привет! Меня зовут Азалия, я продуктовый дизайнер, проектирую мобильные и веб-интерфейсы с фокусом на UX, визуальную систему и продуктовую логику.</p>
+          <p class="lang-en">Hi! My name is Azaliya, I'm a product designer. I design mobile and web interfaces with a focus on UX, visual systems, and product logic.</p>
+          <p class="lang-en">I work with user scenarios, problem research, and building interfaces from idea to ready-to-develop mockups. I integrate AI tools into the design process to speed up prototyping, generate solutions, and test hypotheses.</p>
+        </div>
+        <div class="banner-actions">
+          <a class="info-btn info-btn--secondary" href="#" onclick="navigateTo('projects');return false;">
+            <span class="lang-ru">Посмотреть кейсы</span><span class="lang-en">View case studies</span>
+          </a>
+        </div>
+      </section>
+    </section>
+
+    <!-- ============================================================
+         СТРАНИЦА: ОПЫТ РАБОТЫ
+    ============================================================ -->
+    <section id="experience-page" class="page">
+      <div class="container page-container">
+        <div class="exp-list">
+
+          <div class="exp-item">
+            <div class="exp-date">2024 — 2026</div>
+            <div>
+              <div class="exp-role">Product Designer</div>
+              <div class="exp-company">ООО «Доброград»</div>
+              <div class="exp-desc">
+                <ul>
+                  <li class="lang-ru">Развивала цифровой сервис курортного проекта «Доброград»: анализировала пользовательские сценарии поиска информации, выбора услуг и бронирования, оптимизировала структуру продукта и интерфейсы под бизнес-задачи.</li>
+                  <li class="lang-ru">Провела UX-аудит пользовательских путей, снизила показатель отказов (bounce rate) на 30% и сократила путь до целевого действия с 3 до 1 шага.</li>
+                  <li class="lang-ru">Проектировала пользовательские сценарии и посадочные страницы для рекламных кампаний с учетом различных сегментов аудитории, повышая релевантность коммуникации и качество пользовательского опыта.</li>
+                  <li class="lang-ru">Разрабатывала посадочные страницы и дизайн-системы для digital-проектов различного масштаба, включая «Доброград Панорама Лаундж», «Доброград: Первенство по вейкбордингу», «Чемпионат России по вейкборду (электротяга)» и «Гордость Великой России».</li>
+                  <li class="lang-ru">Спроектировала цифровой сервис заказа блюд: исследовала пользовательский сценарий выбора, выявила проблемы навигации и структуры каталога, протестировала решение и улучшила путь пользователя от просмотра меню до оформления заказа.</li>
+
+                  <li class="lang-en">Developed the digital service for the resort project "Dobrograd": analyzed user scenarios for information search, service selection, and booking; optimized the product structure and interfaces to support business objectives.</li>
+                  <li class="lang-en">Conducted a UX audit of user journeys, reducing the bounce rate by 30% and shortening the path to the target action from 3 steps to 1.</li>
+                  <li class="lang-en">Designed user flows and landing pages for advertising campaigns, taking into account different audience segments to increase communication relevance and improve the overall user experience.</li>
+                  <li class="lang-en">Created landing pages and design systems for digital projects of various scales, including "Dobrograd Panorama Lounge," "Dobrograd: Wakeboarding Championship," "Russian Wakeboarding Championship (Electric Tow)," and "Pride of Great Russia."</li>
+                  <li class="lang-en">Designed a digital food ordering service: researched the user journey for meal selection, identified navigation and catalog structure issues, tested solutions, and improved the user flow from menu browsing to order completion.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-item">
+            <div class="exp-date">2021 — 2024</div>
+            <div>
+              <div class="exp-role"><span class="lang-ru">Product Designer (E-commerce)</span><span class="lang-en">Product Designer (E-commerce)</span></div>
+              <div class="exp-company">Askona</div>
+              <div class="exp-desc">
+                <ul>
+                  <li class="lang-ru">Проектировала и оптимизировала e-commerce сценарии: веб-интерфейсы, лендинги и пользовательские пути, направленные на повышение конверсии в покупку.</li>
+                  <li class="lang-ru">Обеспечила дизайн-сопровождение маркетинговых запусков и акций (лендинги, промоматериалы); повысила конверсию в покупку на 4% (данные Яндекс.Метрики) в сравнении с предыдущим годом, что является хорошим результатом для e-com компаний.</li>
+                  <li class="lang-ru">Разрабатывала и развивала ключевые e-commerce сущности: промо-лендинги, цифровые каталоги, поддерживая целостность UX и конверсионных сценариев.</li>
+                  <li class="lang-ru">Разработала и масштабировала дизайн-систему для продуктового интерфейса проекта Beyosa.</li>
+                  <li class="lang-ru">Проектировала UX- и визуальные концепции продуктовых запусков и кампаний, связывая дизайн-решения с бизнес- и конверсионными метриками.</li>
+                  <li class="lang-ru">Работала с пользовательскими сценариями, состояниями интерфейсов и edge cases в кроссфункциональной продуктовой команде на всех этапах разработки.</li>
+
+                  <li class="lang-en">Designed and optimized e-commerce user flows, including web interfaces, landing pages, and customer journeys focused on increasing purchase conversion.</li>
+                  <li class="lang-en">Provided design support for marketing launches and promotional campaigns (landing pages, promotional assets); increased purchase conversion by 4% based on Yandex Metrica data compared to the previous year, delivering measurable business impact for an e-commerce company.</li>
+                  <li class="lang-en">Developed and maintained key e-commerce experiences, including promotional landing pages and digital catalogs, ensuring consistent UX and conversion-oriented user journeys.</li>
+                  <li class="lang-en">Designed and scaled a design system for the Beyosa product interface.</li>
+                  <li class="lang-en">Created UX and visual concepts for product launches and campaigns, aligning design decisions with business objectives and conversion metrics.</li>
+                  <li class="lang-en">Worked with user scenarios, interface states, and edge cases within a cross-functional product team throughout the entire product development lifecycle.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-item">
+            <div class="exp-date">2020 — 2021</div>
+            <div>
+              <div class="exp-role">UX/UI Designer</div>
+              <div class="exp-company">Natural Health</div>
+              <div class="exp-desc">
+                <ul>
+                  <li class="lang-ru">Поддерживала и обновляла корпоративный сайт в период трансформации компании из сетевого маркетинга в розничную модель: адаптировала контент, структуру и визуальную коммуникацию под новые бизнес-задачи, обеспечивая единый бренд-стиль и актуальность информации на этапе перехода.</li>
+                  <li class="lang-ru">Разрабатывала маркетинговые материалы и digital-коммуникации для онлайн- и офлайн-каналов.</li>
+                  <li class="lang-ru">Создавала контент для социальных сетей и маркетинговых кампаний, который в среднем набирал 4–5 тыс. просмотров на единицу контента.</li>
+                  <li class="lang-ru">Разработала фирменный стиль компании и систему визуальных правил для поддержания целостного брендинга.</li>
+                  <li class="lang-ru">Внедрила фирменный стиль в продуктовую линейку и коммуникационные материалы компании.</li>
+                  <li class="lang-ru">Подготовила визуальное оформление для участия компании в форуме «Исламский мир 2021», где бренд был представлен в единый визуал.</li>
+
+                  <li class="lang-en">Maintained and updated the corporate website during the company's transition from a network marketing model to a retail business model: adapted content, structure, and visual communication to align with new business objectives, ensuring brand consistency and information relevance throughout the transformation period.</li>
+                  <li class="lang-en">Developed marketing materials and digital communications for both online and offline channels.</li>
+                  <li class="lang-en">Created social media content and marketing campaign assets, achieving an average of 4–5K views per content piece.</li>
+                  <li class="lang-en">Developed the company's brand identity and visual guidelines to ensure consistent branding across all touchpoints.</li>
+                  <li class="lang-en">Implemented the brand identity across the product line and company communication materials.</li>
+                  <li class="lang-en">Created visual materials for the company's participation in the "Islamic World 2021" forum, ensuring a unified brand presentation.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="skills">
+          <div class="skill-group">
+            <h3><span class="lang-ru">Инструменты</span><span class="lang-en">Tools</span></h3>
+            <p>Figma, User Flows, Wireframing, Prototyping, Design Systems</p>
+          </div>
+          <div class="skill-group">
+            <h3><span class="lang-ru">Методы</span><span class="lang-en">Methods</span></h3>
+            <p>UX Research, JTBD, CJM, Information Architecture, A/B Testing</p>
+          </div>
+          <div class="skill-group">
+            <h3><span class="lang-ru">Образование</span><span class="lang-en">Education</span></h3>
+            <p><span class="lang-ru">Казанский государственный институт культуры и искусств, 2020</span><span class="lang-en">Kazan State Institute of Culture and Arts, 2020</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         СТРАНИЦА: ПРОЕКТЫ
+    ============================================================ -->
+    <section id="projects-page" class="page">
+      <div id="projects-wrapper">
+        <div class="projects-track-wrapper">
+          <div class="projects-track" id="projects-track">
+            <!-- карточки генерируются в script.js из массива PROJECTS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         СТРАНИЦА: КОНТАКТЫ
+    ============================================================ -->
+    <section id="contact-page" class="page">
+      <div class="container page-container">
+        <div class="contact-links">
+          <a class="contact-link" href="mailto:azalevskih@yandex.ru">azalevskih@yandex.ru</a>
+          <a class="contact-link" href="https://t.me/Azalevskihh" target="_blank" rel="noopener">Telegram — @Azalevskihh</a>
+          <a class="contact-link" href="tel:+79934162829">+7 993 416 28 29</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       ОВЕРЛЕЙ СТРАНИЦЫ ПРОЕКТА (открывается поверх при клике на карточку)
+  ============================================================ -->
+  <div id="project-overlay">
+    <button type="button" class="overlay-close" onclick="closeProject()">
+      ✕ <span class="lang-ru">Назад</span><span class="lang-en">Back</span>
+    </button>
+
+    <div class="proj-banner" id="proj-banner">
+      <div class="proj-banner-bg" id="proj-banner-bg"></div>
+      <div class="proj-banner-overlay"></div>
+    </div>
+
+    <div class="proj-body" id="proj-body"></div>
+  </div>
+
+  <!-- ============================================================
+       ФУТЕР (низ) — Опыт / CV / Контакты
+  ============================================================ -->
+  <footer>
+    <div class="container nav-grid">
+      <a href="#" data-page="experience" onclick="navigateTo('experience');return false;">
+        <span class="lang-ru">Опыт</span><span class="lang-en">Experience</span>
+      </a>
+      <a href="#" onclick="downloadCV();return false;">CV</a>
+      <a href="#" data-page="contact" onclick="navigateTo('contact');return false;">
+        <span class="lang-ru">Контакты</span><span class="lang-en">Contact</span>
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
