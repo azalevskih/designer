@@ -548,13 +548,13 @@ const PROJECTS = [
     fullImage: 'assets/FinCorp.jpg',
   },
 
-  // ── ПРОЕКТ 10 ── Innopolis ────────────────────────────────
+  // ── ПРОЕКТ 12 ── MICE ─────────────────────────────────────
   {
-    id: 10,
-    title: { ru: 'Innopolis', en: 'Innopolis' },
-    cardImg: 'assets/Innopolis banner.jpg',
-    images: ['assets/Innopolis.jpg'],
-    fullImage: 'assets/Innopolis.jpg',
+    id: 12,
+    title: { ru: 'MICE', en: 'MICE' },
+    cardImg: 'assets/MICE banner.jpg',
+    images: ['assets/MICE.jpg'],
+    fullImage: 'assets/MICE.jpg',
   },
 
   // ── ПРОЕКТ 11 ── Chempionat ───────────────────────────────
@@ -566,13 +566,13 @@ const PROJECTS = [
     fullImage: 'assets/Chempionat.jpg',
   },
 
-  // ── ПРОЕКТ 12 ── MICE ─────────────────────────────────────
+  // ── ПРОЕКТ 10 ── Innopolis ────────────────────────────────
   {
-    id: 12,
-    title: { ru: 'MICE', en: 'MICE' },
-    cardImg: 'assets/MICE banner.jpg',
-    images: ['assets/MICE.jpg'],
-    fullImage: 'assets/MICE.jpg',
+    id: 10,
+    title: { ru: 'Innopolis', en: 'Innopolis' },
+    cardImg: 'assets/Innopolis banner.jpg',
+    images: ['assets/Innopolis.jpg'],
+    fullImage: 'assets/Innopolis.jpg',
   },
 
   // ── ПРОЕКТ 13 ── Farm Market ───────────────────────────────
