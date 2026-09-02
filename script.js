@@ -1199,6 +1199,15 @@ const PROJECTS = [
     tags: 'UX Research, Product Design, PropTech, Booking Flow, Figma'
   },
 
+  // ── ПРОЕКТ 16 ── Новый проект ──────────────────────────────
+  {
+    id: 16,
+    title: { ru: 'Новый проект', en: 'New Project' },
+    cardImg: 'assets/111.jpg',
+    images: ['assets/11.jpg'],
+    fullImage: 'assets/11.jpg',
+  },
+
 
 ];
 
