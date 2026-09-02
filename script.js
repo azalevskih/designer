@@ -1377,8 +1377,8 @@ function openProject(id) {
     navEl.classList.remove("scrolled");
     navEl.classList.remove("home-page");
     navEl.classList.toggle("light-banner", !!p.lightBanner);
-    navEl.classList.toggle("first-project", p.id === 6);
-    document.querySelector("footer")?.classList.toggle("first-project", p.id === 6);
+    navEl.classList.toggle("first-project", p.id === 6 || p.id === 10);
+    document.querySelector("footer")?.classList.toggle("first-project", p.id === 6 || p.id === 10);
     return;
   }
 
@@ -1699,8 +1699,8 @@ function openProject(id) {
   navEl.classList.remove("scrolled");
   navEl.classList.remove("home-page");
   navEl.classList.toggle("light-banner", !!p.lightBanner);
-  navEl.classList.toggle("first-project", p.id === 6);
-  document.querySelector("footer")?.classList.toggle("first-project", p.id === 6);
+  navEl.classList.toggle("first-project", p.id === 6 || p.id === 10);
+  document.querySelector("footer")?.classList.toggle("first-project", p.id === 6 || p.id === 10);
 }
 
 function handleNavBack() {
