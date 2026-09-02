@@ -614,6 +614,7 @@ const PROJECTS = [
   // ── ПРОЕКТ 9 ── Т-Банк: Беспилотное Т-Такси (тестовое задание) ──
   {
     id: 9,
+    hidden: true, // временно скрыт
     title: { ru: 'Беспилотное Т-Такси', en: 'Autonomous T-Taxi' },
     cardDesc: { ru: 'Тестовое задание — мониторинг флота беспилотного такси Т-Банка', en: 'Test assignment — fleet monitoring for T-Bank\'s autonomous taxi' },
     bannerColor: '#EDEDED',
@@ -763,6 +764,7 @@ const PROJECTS = [
   // ── ПРОЕКТ 1 ── Core Treasury ────────────────────────────────
   {
     id: 1,
+    hidden: true, // временно скрыт
     title: { ru: 'Core Treasury', en: 'Core Treasury' },
     cardDesc: { ru: 'Корпоративная treasury-платформа для управления ликвидностью', en: 'Corporate treasury platform for liquidity management' },
     bannerColor: '#1D9E75',
