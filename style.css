@@ -1514,6 +1514,11 @@ body.lang-mode-en .lang-ru {
   #mobile-about .about-label {
     margin-top: 40px !important;
   }
+
+  .banner-desc--mobile {
+    margin-top: 18px;
+    margin-bottom: 0;
+  }
 }
 
 
