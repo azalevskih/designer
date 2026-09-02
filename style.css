@@ -1390,6 +1390,25 @@ body.lang-mode-en .lang-ru {
   margin-bottom: 28px;
 }
 
+/* Описание под именем/ролью в баннере */
+.banner-desc {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  color: var(--gray);
+  margin-top: 16px;
+  margin-bottom: 28px;
+}
+
+@media (max-width: 768px) {
+  .banner-desc {
+    font-size: 16px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+  }
+}
+
 /* Основной текст "Обо мне" */
 .info-block--about p {
   font-size: 14px;
